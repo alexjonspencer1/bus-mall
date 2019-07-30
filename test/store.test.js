@@ -1,5 +1,5 @@
 import busMallImages from '../src/data/images.js';
-import store from '../src/data/storage.js';
+import store from '../src/data/store.js';
 
 const test = QUnit.test;
 
@@ -21,11 +21,11 @@ test('Get and Save, a Test.', assert => {
 
     assert.deepEqual(got, luxProducts);
 
+}),
+
+test('Bootstrap products if no products present', (assert) => {
+
+    const products = store.getImages();
+
+    assert.deepEqual(products, busMallImages);
 });
-
-// test('Bootstrap products if no products present', (assert) => {
-
-//     const products = store.getProducts();
-
-//     assert.deepEqual(products, quidditchProducts);
-// });
