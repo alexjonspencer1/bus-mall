@@ -7,6 +7,21 @@ header {
     text-align: left;
 }
 
+.footer {
+    font-family: 'Glegoo', serif;
+    color: #022f54;
+    background: #eee;
+    margin-bottom: 0px;
+    margin-top: 75px;
+    padding: 25px 0;
+    text-align: center;
+    vertical-align: center;
+}
+
+body {
+    margin: 0px;
+}
+
 h1 {
     border: 2.5px solid #00d4ff;
     border-radius: 5px;
@@ -47,7 +62,8 @@ hr {
 .icon-image {
     width: 3%;
     height: 3%;
-    opacity: 0.5
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .icon-image-tweet {
@@ -55,6 +71,7 @@ hr {
     height: 3%;
     opacity: 0.5;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .icon-image-call {
@@ -63,6 +80,7 @@ hr {
     opacity: 0.5;
     margin-right: 2px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 body p {
