@@ -50,6 +50,21 @@ hr {
     opacity: 0.5
 }
 
+.icon-image-tweet {
+    width: 3%;
+    height: 3%;
+    opacity: 0.5;
+    margin-left: 30px;
+}
+
+.icon-image-call {
+    width: 3%;
+    height: 3%;
+    opacity: 0.5;
+    margin-right: 2px;
+    margin-left: 5px;
+}
+
 body p {
     margin-bottom: 30px;
     font-family: 'Glegoo', serif;
@@ -74,25 +89,28 @@ body p {
 
 .button-1 {
     border-radius: 15px;
-    border: 1px solid gray;
+    border: 1px solid #eee;
     width: 290px;
     height: 290px;
     margin-right: 15px;
+    box-shadow: 8px 8px 2px #eee;
 }
 
 .button-2 {
     border-radius: 15px;
-    border: 1px solid gray;
+    border: 1px solid #eee;
     width: 290px;
     height: 290px;
     margin-right: 15px;
+    box-shadow: 8px 8px 2px #eee;
 }
 
 .button-3 {
     border-radius: 15px;
-    border: 1px solid gray;
+    border: 1px solid #eee;
     width: 290px;
     height: 290px;
+    box-shadow: 8px 8px 2px #eee;
 }
 
 #user-image {
@@ -102,7 +120,16 @@ body p {
 }
 
 button:hover {
-    border: 3px solid gray;
-    box-shadow: 10px 10px #eee;
+    border: 1.5px solid #022f54;
+    box-shadow: 8px 8px 2px #eee;
     cursor: pointer;
+}
+
+.phone-number {
+    display: flex;
+    font-family: 'Glegoo', serif;
+    color: #022f54;
+    font-size: 15px;
+    align-items: center;
+    justify-content: flex-end;
 }
