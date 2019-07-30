@@ -12,6 +12,8 @@ Make the following for scaffolding:
 
 I will need to develop the aesthetic using HTML and CSS, creating a framework for the site and the image buttons. Once I have the aesthetic created and formed, I can start to work on the flowchart for writing Javascript, and once that's completed, begin work on the Javascript as a whole. 
 
+For the Javascript, I'll need to incorporate several things. I will need to auto generate random images using a random function, and assign the randomly generated numbers to item order in my image array. I will develop three randomly generated images, and after each image, I will splice that image from the array, so that I do not produce any duplicate images. I will then increment the images that are shown (to keep track of how many times they appear). I will then revert to user choice, which will be a button event listener. I will need to create tests for each of these items and write functions that resolve the tests. I intent to store the image visibility count and the user choice selections in local storage. After the user chooses their image, I will then record their choice, and if it has been completed 25 times, I will hide the buttons and show their results in the form of a table. If they have not iterated 25 times, I will then render three more random images from the array of now 17 items. After those populate, I will put back in the original 3 images I removed, to replenish the array to 17 items, and repeat the process. 
+
 
 
 ## Bus-Mall User Stories
