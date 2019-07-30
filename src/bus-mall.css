@@ -65,21 +65,20 @@ hr {
     opacity: 0.5;
     cursor: pointer;
 }
+.icon-image-call {
+    width: 3.41%;
+    height: 3.41%;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-bottom: -1.72px;
+    margin-left: -2px;
+}
 
 .icon-image-tweet {
     width: 3%;
     height: 3%;
     opacity: 0.5;
     margin-left: 30px;
-    cursor: pointer;
-}
-
-.icon-image-call {
-    width: 3%;
-    height: 3%;
-    opacity: 0.5;
-    margin-right: 2px;
-    margin-left: 5px;
     cursor: pointer;
 }
 
