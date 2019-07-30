@@ -13,10 +13,11 @@ h1 {
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     font-family: 'Glegoo', serif;
-    line-height: 1em;
+    line-height: 1.1em;
     color: #016e96;
     /* background: #eee; */
     box-shadow: 10px 10px #eee;
+    width: 250px;
 }
 
 h2 {
@@ -24,9 +25,17 @@ h2 {
     color: #022f54;
 }
 
+.bus-mall-icon {
+    height: 48%;
+    width: 48%;
+    margin-left: 2px;
+    opacity: 0.5;
+    margin-bottom: -2px;
+}
+
 #mall {
     /* font-weight: bold; */
-    font-size: 50px;
+    font-size: 55px;
     text-transform: lowercase;
 }
 

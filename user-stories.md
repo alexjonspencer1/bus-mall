@@ -2,7 +2,17 @@
 
 ## Bus-Mall Technical Plan
 
-Insert technical plan here. 
+Make the following for scaffolding:
+
+* Start with the following: bus-mall.html, user-stores.md, bus-mall.css. 
+
+* Then create test documents: index.html, index.js. 
+
+* Then pull in outside configs: .eslintrc, .gitignore, .travis.yml, etc. 
+
+I will need to develop the aesthetic using HTML and CSS, creating a framework for the site and the image buttons. Once I have the aesthetic created and formed, I can start to work on the flowchart for writing Javascript, and once that's completed, begin work on the Javascript as a whole. 
+
+
 
 ## Bus-Mall User Stories
 
