@@ -1,6 +1,7 @@
 import busMallImages from './/images.js';
 
 const IMAGE_KEY = 'images';
+const CHOSEN_IMAGES= 'chosen-images';
 
 const store = {
     storage: window.localStorage,
@@ -22,6 +23,18 @@ const store = {
             imageList = busMallImages;
         }
         return imageList;
+    },
+    getResults() {
+        let chosenList = store.get(CHOSEN_IMAGES);
+
+        if(!chosenList) {
+            store.save(CHOSEN_IMAGES, []);
+            chosenList = [];
+        }
+        return chosenList;
+    },
+    saveResults(results) {
+        store.save(CHOSEN_IMAGES, results);
     }
 };
 

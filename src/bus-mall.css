@@ -108,7 +108,7 @@ body p {
     width: 900px;
 }
 
-#button-1 {
+.button-1 {
     border-radius: 15px;
     border: 1px solid #eee;
     width: 290px;
@@ -117,7 +117,7 @@ body p {
     box-shadow: 8px 8px 2px #eee;
 }
 
-#button-2 {
+.button-2 {
     border-radius: 15px;
     border: 1px solid #eee;
     width: 290px;
@@ -126,7 +126,7 @@ body p {
     box-shadow: 8px 8px 2px #eee;
 }
 
-#button-3 {
+.button-3 {
     border-radius: 15px;
     border: 1px solid #eee;
     width: 290px;
