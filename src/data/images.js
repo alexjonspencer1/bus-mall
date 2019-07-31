@@ -94,6 +94,11 @@ const busMallImages = [
         image: 'assets/wine-glass.jpg',
         name: 'Wine Glass',
     },
+    {
+        id: 'baby-sweep',
+        image: 'assets/sweep.png',
+        name: 'Baby Sweep',
+    }
 
 ];
 

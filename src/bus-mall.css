@@ -18,6 +18,10 @@ header {
     vertical-align: center;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 body {
     margin: 0px;
 }
