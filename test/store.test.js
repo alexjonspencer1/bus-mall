@@ -3,7 +3,7 @@ import store from '../src/data/store.js';
 
 const test = QUnit.test;
 
-QUnit.module('');
+QUnit.module('Storage Matters');
 
 store.storage = window.sessionStorage;
 
