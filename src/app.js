@@ -6,6 +6,8 @@ const buttonOne = document.getElementsByClassName('button-1')[0];
 const buttonTwo = document.getElementsByClassName('button-2')[0];
 const buttonThree = document.getElementsByClassName('button-3')[0];
 const divImages = document.getElementById('image-section');
+const finishMessage = document.getElementById('results-id');
+const resultLink = document.getElementById('results-link');
 
 let turns = 0;
 const imageSetArray = [];
@@ -13,6 +15,8 @@ let purgatory = [];
 let allShown = [];
 let idArray = [];
 
+finishMessage.classList.add('hidden');
+resultLink.classList.add('hidden');
 divImages.classList.remove('hidden');
 const focusGroupImages = store.getImages();
 let masterListImageSet = new BusMallSet(focusGroupImages);
@@ -83,6 +87,9 @@ function userChoiceOne() {
 
     if(turns === 25) {
         divImages.classList.add('hidden');
+        resultLink.classList.remove('hidden');
+        finishMessage.classList.remove('hidden');
+        finishMessage.textContent = 'Thank you for participating! Please click on the "Charts" button in the upper-right hand corner to view results';
     }
 }
 
@@ -111,7 +118,9 @@ function trackChosenImages(tracker) {
         chosenImages.push(newListImage);
     }
     store.saveResults(chosenImages);
+    
 }
 // display results 
+
 
 // thank them for

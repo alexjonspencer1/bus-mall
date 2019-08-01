@@ -7,12 +7,29 @@ header {
     text-align: left;
 }
 
+nav {
+    font-family: 'Glegoo', serif;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: #F48320;
+}
+
+#results-id {
+    font-family: 'Glegoo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -250px;
+    color: #F48320;
+}
+
 .footer {
     font-family: 'Glegoo', serif;
     color: #022f54;
     background: #eee;
     margin-bottom: 0px;
-    margin-top: 75px;
+    margin-top: 325px;
     padding: 25px 0;
     text-align: center;
     vertical-align: center;
@@ -154,3 +171,4 @@ button:hover {
     align-items: center;
     justify-content: flex-end;
 }
+
