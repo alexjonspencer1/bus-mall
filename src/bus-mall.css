@@ -3,6 +3,17 @@ main {
     margin: 0 auto;
 }
 
+/* @keyframes h1 {
+    from   {background-color: #eee;}
+    to {background-color: white;}
+} */
+
+@keyframes busmallicon {
+    from  {transform: translateX(-1000%);}
+    to    {transform: translateX(0);}
+
+}
+
 header {
     text-align: left;
 }
@@ -52,6 +63,8 @@ h1 {
     color: #016e96;
     box-shadow: 10px 10px #eee;
     width: 250px;
+    /* animation-name: h1;
+    animation-duration: 2s; */
 }
 
 h2 {
@@ -73,6 +86,8 @@ hr {
     margin-left: 2px;
     opacity: 0.5;
     margin-bottom: -2px;
+    animation-name: busmallicon;
+    animation-duration: 2s;
 }
 
 #mall {
@@ -86,6 +101,7 @@ hr {
     opacity: 0.5;
     cursor: pointer;
 }
+
 .icon-image-call {
     width: 3.41%;
     height: 3.41%;

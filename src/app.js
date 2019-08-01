@@ -15,6 +15,7 @@ let idArray = [];
 const imageSetArray = [];
 
 startUp();
+localStorage.clear();
 const focusGroupImages = store.getImages();
 let masterListImageSet = new BusMallSet(focusGroupImages);
 
