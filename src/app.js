@@ -10,15 +10,15 @@ const divImages = document.getElementById('image-section');
 let turns = 0;
 const imageSetArray = [];
 let purgatory = [];
+let allShown = [];
+let idArray = [];
 
 divImages.classList.remove('hidden');
 const focusGroupImages = store.getImages();
 let masterListImageSet = new BusMallSet(focusGroupImages);
 
 const randomImageOne = masterListImageSet.getRandomImage();
-// console.log(randomImageOne);
 masterListImageSet.removeById(randomImageOne.id);
-// console.log(masterListImageSet);
 buttonOne.firstChild.src = randomImageOne.image;
 buttonOne.id = randomImageOne.id;
 imageSetArray.push(randomImageOne);
@@ -46,8 +46,6 @@ function userChoiceOne() {
 
     const tracker = event.currentTarget;
     tracker.id;
-    // const appearedImages = store.getAppearedProducts(purgatory.code);
-    // // console.log(appearedImages);
 
     trackChosenImages(tracker);
     
@@ -73,6 +71,14 @@ function userChoiceOne() {
     turns++;
     
     purgatory = imageSetArray.splice(0, 3);
+    allShown = [...purgatory, ...allShown];
+    idArray = allShown.map(a => a.id);
+    
+    let occurrences = { };
+    for(let i = 0, j = idArray.length; i < j; i++) {
+        occurrences[idArray[i]] = (occurrences[idArray[i]] || 0) + 1;
+    }
+    store.saveAppearedResults(occurrences);
 
     if(turns === 25) {
         divImages.classList.add('hidden');
@@ -91,10 +97,8 @@ function trackChosenImages(tracker) {
     else {
         for(let i = 0; i < chosenImages.length; i++) {
             const listImage = chosenImages[i];
-            // console.log(tracker.id, listImage.id);
             if(tracker.id === listImage.id) {
                 listImage.count = listImage.count + 1;
-                // console.log('anything', listImage.count);
                 store.saveResults(chosenImages);
                 return;
             }
@@ -104,56 +108,9 @@ function trackChosenImages(tracker) {
             count: 1,
         };
         chosenImages.push(newListImage);
-        // console.log(chosenImages);
     }
     store.saveResults(chosenImages);
 }
 // display results 
 
 // thank them for
-
-
-    // function trackAllShown(allShown) {
-    //     const allShownImages = store.getAppeared();
-    //     if(allShownImages.length === 0) {
-    //         const newShownImage = {
-    //             id: allShown.id,
-    //             count: 1,
-    //         };
-    //         allShownImages.push(newShownImage);
-    //     }
-    
-    // }
-
-
-    // allShown = [...purgatory, ...allShown];
-    //     // console.log(allShown);
-    
-    //     idArray = allShown.map(a => a.id);
-    //     console.log(idArray);
-    
-    //     const shownImages = store.getAppeared();
-    //     if(shownImages.length === 0) {
-    //         const newShownImage = {
-    //             id: idArray[0][1][2],
-    //             count: 1,
-    //         };
-    //         shownImages.push(newShownImage);
-    //     }
-    //     else {
-    //         for(let i = 0; i < shownImages.length; i++) {
-    //             const shownImage = shownImages[i];
-    //             if(idArray === shownImage.id) {
-    //                 shownImage.count = shownImage.count + 1;
-    //                 store.saveResults(shownImages);
-    //                 return;
-    //             }
-    //         }
-    //         const newShownImage = {
-    //             id: idArray,
-    //             count: 1, 
-    //         };
-    //         shownImages.push(newShownImage);
-    //     }
-    //     store.saveResults(shownImages);
-    // }

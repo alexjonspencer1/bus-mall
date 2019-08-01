@@ -38,6 +38,9 @@ const store = {
     saveResults(results) {
         store.save(CHOSEN_IMAGES, results);
     },
+    saveAppearedResults(appearedImages) {
+        store.save(APPEAR_IMAGES, appearedImages);
+    },
     getAppeared() {
         let shownImages = store.get(APPEAR_IMAGES);
 
