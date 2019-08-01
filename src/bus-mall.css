@@ -1,0 +1,174 @@
+main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: left;
+}
+
+nav {
+    font-family: 'Glegoo', serif;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: #F48320;
+}
+
+#results-id {
+    font-family: 'Glegoo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -250px;
+    color: #F48320;
+}
+
+.footer {
+    font-family: 'Glegoo', serif;
+    color: #022f54;
+    background: #eee;
+    margin-bottom: 0px;
+    margin-top: 325px;
+    padding: 25px 0;
+    text-align: center;
+    vertical-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    border: 2.5px solid #00d4ff;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Glegoo', serif;
+    line-height: 1.1em;
+    color: #016e96;
+    box-shadow: 10px 10px #eee;
+    width: 250px;
+}
+
+h2 {
+    font-family: 'Glegoo', serif;
+    color: #022f54;
+}
+
+hr {
+    border-top: 1px solid #00d4ff
+}
+
+.before-images {
+    margin-bottom: 35px;
+}
+
+.bus-mall-icon {
+    height: 48%;
+    width: 48%;
+    margin-left: 2px;
+    opacity: 0.5;
+    margin-bottom: -2px;
+}
+
+#mall {
+    font-size: 55px;
+    text-transform: lowercase;
+}
+
+.icon-image {
+    width: 3%;
+    height: 3%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.icon-image-call {
+    width: 3.41%;
+    height: 3.41%;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-bottom: -1.72px;
+    margin-left: -2px;
+}
+
+.icon-image-tweet {
+    width: 3%;
+    height: 3%;
+    opacity: 0.5;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+body p {
+    margin-bottom: 30px;
+    font-family: 'Glegoo', serif;
+    color: #016e96
+}
+
+#social-media {
+    text-align: right;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#image-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+.button-1 {
+    border-radius: 15px;
+    border: 1px solid #eee;
+    width: 290px;
+    height: 290px;
+    margin-right: 15px;
+    box-shadow: 8px 8px 2px #eee;
+}
+
+.button-2 {
+    border-radius: 15px;
+    border: 1px solid #eee;
+    width: 290px;
+    height: 290px;
+    margin-right: 15px;
+    box-shadow: 8px 8px 2px #eee;
+}
+
+.button-3 {
+    border-radius: 15px;
+    border: 1px solid #eee;
+    width: 290px;
+    height: 290px;
+    box-shadow: 8px 8px 2px #eee;
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+button:hover {
+    border: 1.5px solid #022f54;
+    box-shadow: 8px 8px 2px #eee;
+    cursor: pointer;
+}
+
+.phone-number {
+    display: flex;
+    font-family: 'Glegoo', serif;
+    color: #022f54;
+    font-size: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
