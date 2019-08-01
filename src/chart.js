@@ -2,8 +2,6 @@ import store from './data/store.js';
 import busMallImages from './data/images.js';
 
 const clickResults = store.getResults();
-console.log(clickResults);
-
 const imageLabels = [];
 const imageData = [];
 
@@ -23,7 +21,7 @@ const clickedChart = new Chart(clickedCtx, {
         labels: imageLabels,
         datasets: [
             {
-                label: '# of Clicks',
+                label: 'Clicked Items',
                 data: imageData, 
                 borderColor: '#00d4ff',
                 borderWidth: 2,
@@ -50,9 +48,7 @@ const clickedChart = new Chart(clickedCtx, {
 });
 
 const viewedCtx = document.getElementById('viewed-chart').getContext('2d');
-
 const viewedImages = store.getAppeared();
-
 const viewedLabels = [];
 const viewedData = [];
 
@@ -69,7 +65,7 @@ const viewedChart = new Chart(viewedCtx, {
         labels: viewedLabels, 
         datasets: [
             {
-                label: '# of Views',
+                label: 'All Displayed Items',
                 data: viewedData, 
                 borderColor: '#00d4ff',
                 borderWidth: 2,
