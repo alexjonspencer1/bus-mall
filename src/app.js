@@ -73,7 +73,8 @@ function userChoiceOne() {
     purgatory = imageSetArray.splice(0, 3);
     allShown = [...purgatory, ...allShown];
     idArray = allShown.map(a => a.id);
-    
+
+    // https://stackoverflow.com/questions/11649255/how-to-count-the-number-of-occurrences-of-each-item-in-an-array
     let occurrences = { };
     for(let i = 0, j = idArray.length; i < j; i++) {
         occurrences[idArray[i]] = (occurrences[idArray[i]] || 0) + 1;
