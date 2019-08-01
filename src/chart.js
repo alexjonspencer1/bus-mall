@@ -25,9 +25,11 @@ const clickedChart = new Chart(clickedCtx, {
             {
                 label: '# of Clicks',
                 data: imageData, 
-                borderColor: 'green',
+                borderColor: '#00d4ff',
                 borderWidth: 2,
-                backgroundColor: 'transparent'
+                backgroundColor: '#eee',
+                hoverBorderColor: '#022f54',
+                hoverBackgroundColor: '#00d4ff',
             }
         ]
     },
@@ -69,9 +71,11 @@ const viewedChart = new Chart(viewedCtx, {
             {
                 label: '# of Views',
                 data: viewedData, 
-                borderColor: 'green',
+                borderColor: '#00d4ff',
                 borderWidth: 2,
-                backgroundColor: 'transparent'
+                backgroundColor: '#eee',
+                hoverBorderColor: '#022f54',
+                hoverBackgroundColor: '#00d4ff',
             }
         ]
     },

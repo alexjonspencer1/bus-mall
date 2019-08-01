@@ -89,7 +89,7 @@ function userChoiceOne() {
         divImages.classList.add('hidden');
         resultLink.classList.remove('hidden');
         finishMessage.classList.remove('hidden');
-        finishMessage.textContent = 'Thank you for participating! Please click on the "Charts" button in the upper-right hand corner to view results';
+        finishMessage.textContent = 'Thank you for participating! Please click on the "Charts" button in the upper-right hand corner to view results. You can pick up your gift card in the lobby!';
     }
 }
 
