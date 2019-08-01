@@ -36,24 +36,18 @@ buttonThree.id = randomImageThree.id;
 imageSetArray.push(randomImageThree);
 
 const buttons = document.querySelectorAll('button');
-// console.log(buttons);
 
 for(let i = 0; i < buttons.length; i++) {
     const buttonList = buttons[i];
     buttonList.addEventListener('click', userChoiceOne);
-    // console.log(buttonList);
 }
 
 function userChoiceOne() {
-    // event.preventDefault();
 
     const tracker = event.currentTarget;
     tracker.id;
-
-    // { 
-    //     id: tracker.id,
-    //     count: 1,
-    // }
+    // const appearedImages = store.getAppearedProducts(purgatory.code);
+    // // console.log(appearedImages);
 
     trackChosenImages(tracker);
     
@@ -71,21 +65,19 @@ function userChoiceOne() {
     buttonTwo.id = randomImageTwoRoundTwo.id;
     imageSetArray.push(randomImageTwoRoundTwo);
     
-
     const randomImageThreeRoundTwo = masterListImageSet.getRandomImage();
     masterListImageSet.removeById(randomImageThreeRoundTwo.id);
     buttonThree.firstChild.src = randomImageThreeRoundTwo.image;
     buttonThree.id = randomImageThreeRoundTwo.id;
     imageSetArray.push(randomImageThreeRoundTwo);
     turns++;
-
+    
     purgatory = imageSetArray.splice(0, 3);
 
     if(turns === 25) {
         divImages.classList.add('hidden');
-    }   
+    }
 }
-
 
 function trackChosenImages(tracker) {
     const chosenImages = store.getResults();
@@ -99,10 +91,10 @@ function trackChosenImages(tracker) {
     else {
         for(let i = 0; i < chosenImages.length; i++) {
             const listImage = chosenImages[i];
-            console.log(tracker.id, listImage.id);
+            // console.log(tracker.id, listImage.id);
             if(tracker.id === listImage.id) {
                 listImage.count = listImage.count + 1;
-                console.log('anything', listImage.count);
+                // console.log('anything', listImage.count);
                 store.saveResults(chosenImages);
                 return;
             }
@@ -112,10 +104,56 @@ function trackChosenImages(tracker) {
             count: 1,
         };
         chosenImages.push(newListImage);
-            // console.log(chosenImages);
+        // console.log(chosenImages);
     }
     store.saveResults(chosenImages);
 }
 // display results 
 
 // thank them for
+
+
+    // function trackAllShown(allShown) {
+    //     const allShownImages = store.getAppeared();
+    //     if(allShownImages.length === 0) {
+    //         const newShownImage = {
+    //             id: allShown.id,
+    //             count: 1,
+    //         };
+    //         allShownImages.push(newShownImage);
+    //     }
+    
+    // }
+
+
+    // allShown = [...purgatory, ...allShown];
+    //     // console.log(allShown);
+    
+    //     idArray = allShown.map(a => a.id);
+    //     console.log(idArray);
+    
+    //     const shownImages = store.getAppeared();
+    //     if(shownImages.length === 0) {
+    //         const newShownImage = {
+    //             id: idArray[0][1][2],
+    //             count: 1,
+    //         };
+    //         shownImages.push(newShownImage);
+    //     }
+    //     else {
+    //         for(let i = 0; i < shownImages.length; i++) {
+    //             const shownImage = shownImages[i];
+    //             if(idArray === shownImage.id) {
+    //                 shownImage.count = shownImage.count + 1;
+    //                 store.saveResults(shownImages);
+    //                 return;
+    //             }
+    //         }
+    //         const newShownImage = {
+    //             id: idArray,
+    //             count: 1, 
+    //         };
+    //         shownImages.push(newShownImage);
+    //     }
+    //     store.saveResults(shownImages);
+    // }

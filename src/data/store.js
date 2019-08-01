@@ -1,7 +1,9 @@
 import busMallImages from './/images.js';
+import { findProduct } from '../find-product.js';
 
 const IMAGE_KEY = 'images';
-const CHOSEN_IMAGES= 'chosen-images';
+const CHOSEN_IMAGES = 'chosen-images';
+const APPEAR_IMAGES = 'appear-images';
 
 const store = {
     storage: window.localStorage,
@@ -35,7 +37,35 @@ const store = {
     },
     saveResults(results) {
         store.save(CHOSEN_IMAGES, results);
-    }
+    },
+    getAppeared() {
+        let shownImages = store.get(APPEAR_IMAGES);
+
+        if(!shownImages) {
+            store.save(APPEAR_IMAGES, []);
+            shownImages = [];
+        }
+        return shownImages;
+    },
+    getAppearedProducts(code) {
+
+        const appearedImages = store.getAppeared();
+        const lineItem = findProduct(appearedImages, code);
+
+        if(lineItem) {
+            lineItem.quantity++;
+        } 
+        else {
+            const lineItem = {
+                code: code,
+                quantity: 1
+            };
+            
+            appearedImages.push(lineItem);
+        }
+
+        store.save(APPEAR_IMAGES, appearedImages);
+    },
 };
 
 export default store;
