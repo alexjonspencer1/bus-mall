@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Glegoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/bus-mall.css">
     <link rel="stylesheet" href="src/chart.css">
     <title>Market Research Chart</title>
 </head>
 <body>
+    <main>
+        <header class="header-flex">
+    
+            <h1>
+                Bus<img class="bus-mall-icon" src="assets/bus-mall icon.png"><br>
+                <span id="mall">Mall</span>
+            </h1>
+
+            <div id="social-media">
+                
+                <img class="icon-image-tweet" src="assets/Twitter Clean.png">
+                <img class="icon-image" src="assets/instagram.png">
+                <img class="icon-image" src="assets/facebook.png">
+                <img class="icon-image" src="assets/pinterest.png">
+                <img class="icon-image-call" src="assets/call logo.png">
+                <br>
+                <div class="call-div">
+                    <span class="phone-number"> call | 1-800-bus-mall</span>
+                    <nav id="results-link">
+                        <a href="bus-mall.html">Home</a>
+                        <a href="chart.html">Chart Results</a>
+                    </nav>
+                </div>
+            </div>
+        
+        </header>
+    
     <canvas id="clicked-chart"></canvas>
     <canvas id="viewed-chart"></canvas>
+
+    </main>
+
+    <footer>
+        <p class="footer">&copy; Bus Mall, Inc.</p>
+    </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
     <script type="module" src="src/chart.js"></script>

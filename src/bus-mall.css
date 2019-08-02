@@ -3,15 +3,10 @@ main {
     margin: 0 auto;
 }
 
-/* @keyframes h1 {
-    from   {background-color: #eee;}
-    to {background-color: white;}
-} */
-
 @keyframes busmallicon {
-    from  {transform: translateX(-1000%);}
-    to    {transform: translateX(0);}
-
+    0%      {transform: translateX(-1000%);}
+    98%     {transform: skew(-1turn, 6deg);}
+    100%    {transform: translateX(0);}
 }
 
 header {
@@ -33,6 +28,7 @@ nav a {
     text-align: center;
     margin-top: -250px;
     color: #F48320;
+    user-select: none;
 }
 
 .footer {
@@ -55,7 +51,7 @@ body {
 }
 
 h1 {
-    border: 2.5px solid #00d4ff;
+    border: 2.5px solid #4c89bb;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     font-family: 'Glegoo', serif;
@@ -87,7 +83,7 @@ hr {
     opacity: 0.5;
     margin-bottom: -2px;
     animation-name: busmallicon;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 #mall {
@@ -148,6 +144,14 @@ body p {
     height: 290px;
     margin-right: 15px;
     box-shadow: 8px 8px 2px #eee;
+    transition: all .02s ease-in-out;
+}
+.button-1:focus {
+    outline:0;
+}
+
+.button-1:hover {
+    transform: scale(1.01);
 }
 
 .button-2 {
@@ -157,6 +161,15 @@ body p {
     height: 290px;
     margin-right: 15px;
     box-shadow: 8px 8px 2px #eee;
+    transition: all .02s ease-in-out;
+}
+
+.button-2:focus {
+    outline:0;
+}
+
+.button-2:hover {
+    transform: scale(1.01);
 }
 
 .button-3 {
@@ -165,6 +178,15 @@ body p {
     width: 290px;
     height: 290px;
     box-shadow: 8px 8px 2px #eee;
+    transition: all .02s ease-in-out;
+}
+
+.button-3:focus {
+    outline:0;
+}
+
+.button-3:hover {
+    transform: scale(1.01);
 }
 
 .user-image {
@@ -174,7 +196,7 @@ body p {
 }
 
 button:hover {
-    border: 1.5px solid #022f54;
+    border: 0.5px solid #4c89bb;
     box-shadow: 8px 8px 2px #eee;
     cursor: pointer;
 }

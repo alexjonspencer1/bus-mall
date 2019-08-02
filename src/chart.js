@@ -38,7 +38,15 @@ const clickedChart = new Chart(clickedCtx, {
             }
         },
         scales: {
+            xAxes: [{
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0)',
+                }
+            }],
             yAxes: [{
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0)',
+                },
                 ticks: {
                     beginAtZero:true
                 }
@@ -82,7 +90,15 @@ const viewedChart = new Chart(viewedCtx, {
             }
         },
         scales: {
+            xAxes: [{
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0)',
+                }
+            }],
             yAxes: [{
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0)',
+                },
                 ticks: {
                     beginAtZero:true
                 }
